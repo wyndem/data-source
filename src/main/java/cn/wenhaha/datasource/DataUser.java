@@ -10,13 +10,14 @@ package cn.wenhaha.datasource;
 public class DataUser {
 
     private  String id;
-    private String name;
+    private  String name;
     private  String password;
     private  String lastUpdateTime;
     private  String webSite;
     private  String createTime;
     private  String pluginCode;
     private  String pluginName;
+    private  String icon;
 
 
     public String getId() {
@@ -83,6 +84,14 @@ public class DataUser {
         this.pluginName = pluginName;
     }
 
+    public String getIcon() {
+        return icon;
+    }
+
+    public void setIcon(String icon) {
+        this.icon = icon;
+    }
+
     @Override
     public String toString() {
         return "DataUser{" +
@@ -94,6 +103,7 @@ public class DataUser {
                 ", createTime='" + createTime + '\'' +
                 ", pluginCode='" + pluginCode + '\'' +
                 ", pluginName='" + pluginName + '\'' +
+                ", icon='" + icon + '\'' +
                 '}';
     }
 }
