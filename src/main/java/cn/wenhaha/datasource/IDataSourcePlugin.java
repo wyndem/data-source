@@ -1,5 +1,7 @@
 package cn.wenhaha.datasource;
 
+import org.pf4j.ExtensionPoint;
+
 /**
  * 插件需实现的接口合集
  * --------
@@ -7,7 +9,7 @@ package cn.wenhaha.datasource;
  * @author ：wyndem
  * @Date ：Created in 2022-07-07 22:14
  */
-public interface IDataSourcePlugin {
+public interface IDataSourcePlugin extends ExtensionPoint {
 
     Class<?>[] controller();
 

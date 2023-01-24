@@ -20,14 +20,14 @@ public interface EventListen {
      * 单独实例，调用后销毁
      * @param id
      */
-    void onLoad(Integer id);
+    void onLoad(String id);
 
 
     /**
      * 当插件启动时，回调该方法
      * @param id 数据库id
      */
-    void onStart(Integer id);
+    void onStart(String id);
 
     /**
      * 禁用该插件时，回调。于onStart共有对象实例
